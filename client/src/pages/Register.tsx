@@ -73,7 +73,7 @@ const Register: React.FC = () => {
       })).unwrap();
       
       // Registration successful, navigate to dashboard
-      navigate('/dashboard');
+      navigate('/app/dashboard');
     } catch (err) {
       console.error('Registration failed:', err);
     }

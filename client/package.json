@@ -2,7 +2,7 @@
   "name": "trading-journal-client",
   "version": "1.0.0",
   "type": "module",
-  "description": "Frontend for Indian Market Trading Journal",
+  "description": "Frontend for MyTradeDiary",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

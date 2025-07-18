@@ -17,6 +17,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 
 // Main Pages
+import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Trades from './pages/Trades';
 import TradeForm from './pages/TradeForm';
@@ -69,6 +70,22 @@ const App: React.FC = () => {
       <AnimatePresence mode="wait">
         <Routes>
           {/* Public Routes */}
+          <Route path="/" element={
+            !isAuthenticated ? (
+              <motion.div
+                key="home"
+                variants={pageTransition}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                <Home />
+              </motion.div>
+            ) : (
+              <Navigate to="/app/dashboard" replace />
+            )
+          } />
+          
           <Route path="/login" element={
             !isAuthenticated ? (
               <motion.div
@@ -97,17 +114,17 @@ const App: React.FC = () => {
                 <Register />
               </motion.div>
             ) : (
-              <Navigate to="/dashboard" replace />
+              <Navigate to="/app/dashboard" replace />
             )
           } />
 
           {/* Protected Routes */}
-          <Route path="/" element={
+          <Route path="/app" element={
             <ProtectedRoute>
               <Layout />
             </ProtectedRoute>
           }>
-            <Route index element={<Navigate to="/dashboard" replace />} />
+            <Route index element={<Navigate to="dashboard" replace />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="trades" element={<Trades />} />
             <Route path="trades/new" element={<TradeForm />} />

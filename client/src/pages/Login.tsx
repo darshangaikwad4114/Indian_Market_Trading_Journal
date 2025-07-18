@@ -39,7 +39,7 @@ const Login: React.FC = () => {
       const result = await dispatch(login(data));
       if (login.fulfilled.match(result)) {
         toast.success('Login successful!');
-        navigate('/dashboard');
+        navigate('/app/dashboard');
       } else {
         toast.error(result.payload as string || 'Login failed');
       }

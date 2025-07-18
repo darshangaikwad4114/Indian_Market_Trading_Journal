@@ -1,7 +1,7 @@
 {
   "name": "trading-journal-server",
   "version": "1.0.0",
-  "description": "Backend API for Indian Market Trading Journal",
+  "description": "Backend API for MyTradeDiary",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",

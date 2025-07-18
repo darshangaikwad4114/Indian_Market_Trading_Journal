@@ -14,7 +14,7 @@ const Dashboard: React.FC = () => {
       <div>
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Dashboard</h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">
-          Welcome to your trading journal dashboard
+          Welcome to your MyTradeDiary dashboard
         </p>
       </div>
 

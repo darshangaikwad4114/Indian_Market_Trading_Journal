@@ -15,13 +15,14 @@ import {
 import { RootState, AppDispatch } from '../store';
 import { logout } from '../store/slices/authSlice';
 import { cn } from '../utils';
+import Logo from './Logo';
 
 const navigation = [
-  { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
-  { name: 'Trades', href: '/trades', icon: TrendingUp },
-  { name: 'New Trade', href: '/trades/new', icon: PlusCircle },
-  { name: 'Portfolio', href: '/portfolio', icon: PieChart },
-  { name: 'Reports', href: '/reports', icon: FileText },
+  { name: 'Dashboard', href: '/app/dashboard', icon: LayoutDashboard },
+  { name: 'Trades', href: '/app/trades', icon: TrendingUp },
+  { name: 'New Trade', href: '/app/trades/new', icon: PlusCircle },
+  { name: 'Portfolio', href: '/app/portfolio', icon: PieChart },
+  { name: 'Reports', href: '/app/reports', icon: FileText },
 ];
 
 const Sidebar: React.FC = () => {
@@ -67,10 +68,12 @@ const Sidebar: React.FC = () => {
       >
         <div className="flex h-full flex-col">
           {/* Header */}
+          {/* Header */}
           <div className="flex h-16 items-center justify-center border-b border-gray-200 dark:border-gray-700 px-6">
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-              Trading Journal
-            </h1>
+            <Logo size="sm" showText={false} />
+            <span className="ml-3 text-lg font-bold text-gray-900 dark:text-white">
+              MyTradeDiary
+            </span>
           </div>
 
           {/* Navigation */}
