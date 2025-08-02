@@ -28,54 +28,41 @@ const Home: React.FC = () => {
       icon: <TrendingUp className="h-6 w-6" />,
       title: "Advanced Trade Tracking",
       description:
-        "Record every trade with detailed entry/exit points, profit/loss calculations, and comprehensive analytics tailored for NSE and BSE.",
+        "Record trades with detailed entry/exit points, P/L calculations, and analytics for NSE/BSE.",
     },
     {
       icon: <BarChart3 className="h-6 w-6" />,
       title: "Performance Analytics",
       description:
-        "Visualize your trading performance with interactive charts, win rate analysis, and trend identification specific to Indian markets.",
+        "Visualize performance with interactive charts, win rate analysis, and trend identification.",
     },
     {
       icon: <Target className="h-6 w-6" />,
-      title: "Goal Setting & Monitoring",
+      title: "Goal Setting",
       description:
-        "Set realistic trading goals, track progress, and receive AI-powered insights to improve your trading strategy and consistency.",
+        "Set trading goals, track progress, and get AI-powered insights to improve your strategy.",
     },
     {
       icon: <Shield className="h-6 w-6" />,
       title: "Risk Management",
       description:
-        "Monitor position sizes, portfolio allocation, and risk metrics with built-in calculators for Indian market regulations.",
+        "Monitor position sizes, portfolio allocation, and risk metrics for Indian market regulations.",
     },
     {
       icon: <BookOpen className="h-6 w-6" />,
-      title: "Detailed Trading Journal",
+      title: "Detailed Journal",
       description:
-        "Maintain comprehensive trade notes, emotional state tracking, and strategy documentation with market-specific templates.",
+        "Maintain trade notes, track emotions, and document strategies with market-specific templates.",
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Community Insights",
       description:
-        "Learn from successful Indian traders, share experiences, and access educational content focused on local market conditions.",
+        "Learn from successful traders and access educational content focused on Indian markets.",
     },
   ];
 
-  const benefits = [
-    "Track unlimited trades across NSE, BSE, and commodity markets",
-    "Real-time profit/loss calculations in INR with tax implications",
-    "Advanced filtering and search capabilities for Indian stocks",
-    "Export reports for Income Tax filing and CA consultation",
-    "Support for equity, F&O, commodity, and currency trading",
-    "Integration with major Indian brokers (Zerodha, Upstox, Angel One)",
-    "Automated dividend and bonus tracking for Indian equities",
-    "Sector-wise performance analysis for Indian market segments",
-    "Mobile-responsive design for trading on-the-go",
-    "Bank-level security with encrypted data and 2FA",
-    "Real-time NSE/BSE market data integration",
-    "Personalized trading insights powered by AI",
-  ];
+
 
   const faqs = [
     {
@@ -123,6 +110,20 @@ const Home: React.FC = () => {
     {
       name: "Raghav Bhandari",
       role: "Options Trader",
+      content:
+        "Finally, a journal that understands Indian markets. The P&L tracking and tax reports save me hours every month.",
+      rating: 5,
+    },
+    {
+      name: "Dhanashri Chorghe",
+      role: "Crypto Trader",
+      content:
+        "Finally, a journal that understands Indian markets. The P&L tracking and tax reports save me hours every month.",
+      rating: 5,
+    },
+    {
+      name: "Sakshi Parbhat",
+      role: "Forex Trader",
       content:
         "Finally, a journal that understands Indian markets. The P&L tracking and tax reports save me hours every month.",
       rating: 5,
@@ -258,15 +259,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Everything You Need to Excel
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Our comprehensive platform provides all the tools and insights you
-              need to become a consistently profitable trader.
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Our platform provides the tools and insights to become a consistently profitable trader.
             </p>
           </div>
 
@@ -295,9 +295,9 @@ const Home: React.FC = () => {
       </section>
 
       {/* Indian Market Specific Benefits */}
-      <section className="py-24 bg-gradient-to-br from-orange-50 via-amber-50 to-green-50 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900">
+      <section className="py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-green-50 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -309,13 +309,12 @@ const Home: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Designed Specifically for Indian Traders
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Navigate the complexities of Indian markets with features tailored
-              for NSE, BSE, and regulatory requirements.
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Navigate Indian markets with features tailored for NSE, BSE, and regulatory requirements.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -325,12 +324,11 @@ const Home: React.FC = () => {
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📊</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 NSE & BSE Integration
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Real-time data from both major Indian exchanges with automatic
-                symbol mapping and corporate action tracking.
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Real-time data from major Indian exchanges with automatic symbol mapping.
               </p>
             </motion.div>
 
@@ -343,12 +341,11 @@ const Home: React.FC = () => {
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">💰</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 Tax Compliance Made Easy
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Automatic STCG/LTCG calculations, TDS tracking, and CA-ready
-                reports for seamless tax filing.
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Automatic STCG/LTCG calculations and CA-ready reports for seamless tax filing.
               </p>
             </motion.div>
 
@@ -361,12 +358,11 @@ const Home: React.FC = () => {
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🔗</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 Broker Integration
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Connect with Zerodha, Upstox, Angel One, and other major Indian
-                brokers for automatic trade import.
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Connect with Zerodha, Upstox, Angel One and more for automatic trade import.
               </p>
             </motion.div>
 
@@ -379,12 +375,11 @@ const Home: React.FC = () => {
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📈</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 F&O Analytics
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Advanced futures and options tracking with expiry management,
-                Greek calculations, and strategy analysis.
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Advanced futures and options tracking with expiry management and strategy analysis.
               </p>
             </motion.div>
 
@@ -397,12 +392,11 @@ const Home: React.FC = () => {
               <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🏭</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 Sector Analysis
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Track performance across Indian sectors like IT, Pharma,
-                Banking, and Auto with market-specific insights.
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Track performance across Indian sectors like IT, Pharma, Banking, and Auto.
               </p>
             </motion.div>
 
@@ -415,12 +409,11 @@ const Home: React.FC = () => {
               <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🔒</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 Indian Data Security
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Data stored in Indian servers with compliance to local
-                regulations and complete privacy protection.
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Data stored in Indian servers with compliance to local regulations.
               </p>
             </motion.div>
           </div>
@@ -428,9 +421,9 @@ const Home: React.FC = () => {
       </section>
 
        {/* Competitive Advantage Section */}
-      <section className="py-24 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -441,10 +434,10 @@ const Home: React.FC = () => {
               Why Choose MyTradeDiary
             </motion.div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Beyond Basic Trade Journaling
+              Beyond Basic Journaling
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              See how MyTradeDiary outperforms traditional journaling methods and competitors
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              See how MyTradeDiary outperforms traditional methods and competitors.
             </p>
           </div>
 
@@ -453,15 +446,15 @@ const Home: React.FC = () => {
               <table className="w-full">
                 <thead className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
                   <tr>
-                    <th className="px-6 py-4 text-left text-lg font-semibold">Features</th>
-                    <th className="px-6 py-4 text-center text-lg font-semibold">
+                    <th className="px-4 py-3 text-left text-base font-semibold">Features</th>
+                    <th className="px-4 py-3 text-center text-base font-semibold">
                       <div className="flex items-center justify-center gap-2">
                         <TrendingUp className="h-5 w-5" />
                         MyTradeDiary
                       </div>
                     </th>
-                    <th className="px-6 py-4 text-center text-lg font-semibold">Other Platforms</th>
-                    <th className="px-6 py-4 text-center text-lg font-semibold">Excel/Manual</th>
+                    <th className="px-4 py-3 text-center text-base font-semibold">Other Platforms</th>
+                    <th className="px-4 py-3 text-center text-base font-semibold">Excel/Manual</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -478,7 +471,7 @@ const Home: React.FC = () => {
                     ["Bank-grade security", "✅", "✅", "❌"],
                     ["24/7 customer support", "✅", "⚠️", "❌"],
                     ["Educational content library", "✅", "❌", "❌"],
-                  ].map((row, index) => (
+                  ].map((row: string[], index: number) => (
                     <motion.tr
                       key={index}
                       initial={{ opacity: 0, x: -20 }}
@@ -486,21 +479,21 @@ const Home: React.FC = () => {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                     >
-                      <td className="px-6 py-4 text-gray-900 dark:text-gray-100 font-medium">
+                      <td className="px-4 py-3 text-gray-900 dark:text-gray-100 font-medium text-sm">
                         {row[0]}
                       </td>
-                      <td className="px-6 py-4 text-center">
-                        <span className={`text-2xl ${row[1] === "✅" ? "text-green-500" : row[1] === "⚠️" ? "text-yellow-500" : "text-red-500"}`}>
+                      <td className="px-4 py-3 text-center">
+                        <span className={`text-xl ${row[1] === "✅" ? "text-green-500" : row[1] === "⚠️" ? "text-yellow-500" : "text-red-500"}`}>
                           {row[1]}
                         </span>
                       </td>
-                      <td className="px-6 py-4 text-center">
-                        <span className={`text-2xl ${row[2] === "✅" ? "text-green-500" : row[2] === "⚠️" ? "text-yellow-500" : "text-red-500"}`}>
+                      <td className="px-4 py-3 text-center">
+                        <span className={`text-xl ${row[2] === "✅" ? "text-green-500" : row[2] === "⚠️" ? "text-yellow-500" : "text-red-500"}`}>
                           {row[2]}
                         </span>
                       </td>
-                      <td className="px-6 py-4 text-center">
-                        <span className={`text-2xl ${row[3] === "✅" ? "text-green-500" : row[3] === "⚠️" ? "text-yellow-500" : "text-red-500"}`}>
+                      <td className="px-4 py-3 text-center">
+                        <span className={`text-xl ${row[3] === "✅" ? "text-green-500" : row[3] === "⚠️" ? "text-yellow-500" : "text-red-500"}`}>
                           {row[3]}
                         </span>
                       </td>
@@ -535,473 +528,184 @@ const Home: React.FC = () => {
       {/* Why Trading Journal Matters */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full text-sm font-medium mb-6"
-            >
-              <BookOpen className="h-4 w-4" />
-              Trading Psychology
-            </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              Why Every Successful Trader Keeps a Journal
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              Why Every Trader Needs a Journal
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Transform your trading with systematic tracking and data-driven insights. 
-              Your roadmap to consistent profitability.
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Successful trading is not about luck; it's about discipline,
+              strategy, and continuous improvement.
             </p>
           </div>
 
-          {/* Bento Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Main Stats Card - Takes 2 columns on large screens */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="lg:col-span-2 bg-gradient-to-br from-blue-600 to-purple-600 text-white p-8 rounded-2xl shadow-xl"
-            >
-              <div className="flex flex-col lg:flex-row items-center justify-between h-full">
-                <div className="text-center lg:text-left mb-6 lg:mb-0">
-                  <div className="text-6xl font-bold mb-2">78%</div>
-                  <p className="text-blue-100 text-lg mb-4">
-                    Win rate improvement with detailed journals
-                  </p>
-                  <div className="flex gap-4 justify-center lg:justify-start">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold">15min</div>
-                      <p className="text-blue-200 text-sm">
-                        Daily time
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold">3x</div>
-                      <p className="text-blue-200 text-sm">
-                        Faster learning
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
-                    <BarChart3 className="h-16 w-16 text-white" />
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center p-6">
+              <div className="flex justify-center items-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center">
+                  <Clock className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </div>
               </div>
-            </motion.div>
-
-            {/* Trading Psychology Benefits */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-xl"
-            >
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mr-3">
-                  <Brain className="h-5 w-5 text-purple-600 dark:text-purple-400" />
-                </div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white">
-                  Psychology
-                </h4>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <Target className="h-4 w-4 text-green-500 mr-3" />
-                  <span className="text-sm">Control emotions</span>
-                </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <TrendingUp className="h-4 w-4 text-blue-500 mr-3" />
-                  <span className="text-sm">Spot patterns</span>
-                </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <Shield className="h-4 w-4 text-red-500 mr-3" />
-                  <span className="text-sm">Manage risk</span>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Key Benefits - Spans 2 columns */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="lg:col-span-2 bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-xl"
-            >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-                <LineChart className="h-5 w-5 text-green-600 mr-2" />
-                Trading Analytics
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Identify Patterns
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {benefits.slice(0, 4).map((benefit, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start p-3 bg-gray-50 dark:bg-gray-800 rounded-lg"
-                  >
-                    <div className="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                      <CheckCircle className="h-3 w-3 text-green-600 dark:text-green-400" />
-                    </div>
-                    <span className="text-sm text-gray-700 dark:text-gray-300">
-                      {benefit}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Success Metrics */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-xl"
-            >
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mr-3">
-                  <Trophy className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
-                </div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white">
-                  Success
-                </h4>
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="text-center p-3 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900 dark:to-green-800 rounded-lg">
-                  <div className="text-xl font-bold text-green-600 dark:text-green-400">
-                    +45%
-                  </div>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Profit
-                  </p>
-                </div>
-                <div className="text-center p-3 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-lg">
-                  <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                    -60%
-                  </div>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Losses
-                  </p>
-                </div>
-                <div className="text-center p-3 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900 dark:to-purple-800 rounded-lg">
-                  <div className="text-xl font-bold text-purple-600 dark:text-purple-400">
-                    92%
-                  </div>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Satisfaction
-                  </p>
-                </div>
-                <div className="text-center p-3 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900 dark:to-orange-800 rounded-lg">
-                  <div className="text-xl font-bold text-orange-600 dark:text-orange-400">
-                    2.5x
-                  </div>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Learning
-                  </p>
+              <p className="text-gray-600 dark:text-gray-400">
+                Discover your winning and losing patterns to capitalize on
+                strengths and eliminate weaknesses.
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="flex justify-center items-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/20 flex items-center justify-center">
+                  <Brain className="h-8 w-8 text-green-600 dark:text-green-400" />
                 </div>
               </div>
-            </motion.div>
-
-            {/* Advanced Features */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="lg:col-span-2 bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-xl"
-            >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-                <Shield className="h-5 w-5 text-blue-600 mr-2" />
-                Security & Features
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Control Emotions
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {benefits.slice(4, 8).map((benefit, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start p-3 bg-gray-50 dark:bg-gray-800 rounded-lg"
-                  >
-                    <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                      <CheckCircle className="h-3 w-3 text-blue-600 dark:text-blue-400" />
-                    </div>
-                    <span className="text-sm text-gray-700 dark:text-gray-300">
-                      {benefit}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Time Investment */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-6 rounded-2xl shadow-xl"
-            >
-              <div className="flex items-center mb-4">
-                <Clock className="h-8 w-8 mr-3" />
-                <h4 className="text-lg font-bold">Time Investment</h4>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm">Daily</span>
-                  <span className="text-lg font-bold">15min</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm">Weekly</span>
-                  <span className="text-lg font-bold">30min</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm">Monthly</span>
-                  <span className="text-lg font-bold">1hr</span>
-                </div>
-                <div className="text-xs text-indigo-200 mt-4">
-                  Small time, massive results
+              <p className="text-gray-600 dark:text-gray-400">
+                By logging your emotional state, you can learn to control fear
+                and greed, leading to more rational decisions.
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="flex justify-center items-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900/20 flex items-center justify-center">
+                  <LineChart className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                 </div>
               </div>
-            </motion.div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Refine Strategies
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Track the performance of different trading strategies to see
+                what works best in various market conditions.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      {/* Testimonials Section */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Trusted by Successful Traders
+              What Our Users Say
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
-              See how our platform has helped traders achieve consistent
-              profitability
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Real stories from traders who have leveled up their game with
+              MyTradeDiary.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg"
-              >
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-5 w-5 text-yellow-400 fill-current"
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  "{testimonial.content}"
-                </p>
-                <div>
-                  <div className="font-semibold text-gray-900 dark:text-white">
-                    {testimonial.name}
+          <div
+            className="relative w-full overflow-hidden"
+            style={{
+              maskImage:
+                "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
+            }}
+          >
+            <motion.div
+              className="flex gap-8"
+              animate={{
+                x: ["0%", "-100%"],
+              }}
+              transition={{
+                ease: "linear",
+                duration: 40,
+                repeat: Infinity,
+              }}
+            >
+              {[...testimonials, ...testimonials].map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-[350px] bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
+                >
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">
+                    "{testimonial.content}"
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                    <div className="ml-3">
+                      <div className="font-semibold text-gray-900 dark:text-white">
+                        {testimonial.name}
+                      </div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                        {testimonial.role}
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-sm text-gray-500">
-                    {testimonial.role}
-                  </div>
                 </div>
-              </motion.div>
-            ))}
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
-{/* How It Works Section */}
-      <section className="py-24 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      {/* How It Works Section */}
+      <section className="py-24 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-medium mb-6"
-            >
-              <BookOpen className="h-4 w-4" />
-              Simple Process
-            </motion.div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              From Chaos to Clarity in 4 Steps
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Get Started in Minutes
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Transform your trading journey with our proven methodology used by 10,000+ successful Indian traders
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              A simple, streamlined process to elevate your trading.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Steps */}
-            <div className="space-y-8">
+          <div className="relative">
+            {/* Dotted line */}
+            <div className="absolute top-1/2 left-0 w-full h-px bg-gray-300 dark:bg-gray-700" style={{transform: 'translateY(-50%)'}}></div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
               {[
                 {
                   step: "01",
-                  title: "Connect & Auto-Import",
-                  description: "Link your broker accounts (Zerodha, Upstox, Angel One, etc.) and let our system automatically import all your trades with zero manual entry.",
-                  icon: <TrendingUp className="h-6 w-6" />,
-                  color: "from-blue-500 to-purple-600"
+                  title: "Import Trades",
+                  description: "Connect your broker and automatically sync your trading history.",
+                  icon: <TrendingUp className="h-8 w-8" />,
                 },
                 {
                   step: "02",
-                  title: "Analyze & Tag",
-                  description: "Our AI categorizes trades by strategy, emotions, and market conditions. Add screenshots, notes, and emotional states for complete context.",
-                  icon: <Brain className="h-6 w-6" />,
-                  color: "from-purple-500 to-pink-600"
+                  title: "Analyze Performance",
+                  description: "Use our powerful analytics to find your edge in the market.",
+                  icon: <BarChart3 className="h-8 w-8" />,
                 },
                 {
                   step: "03",
-                  title: "Discover Patterns",
-                  description: "Uncover hidden patterns in your trading with 50+ analytics including win rates, profit factors, and psychological biases across different market conditions.",
-                  icon: <BarChart3 className="h-6 w-6" />,
-                  color: "from-pink-500 to-red-600"
+                  title: "Refine Strategy",
+                  description: "Identify patterns and adjust your approach with data-driven insights.",
+                  icon: <Target className="h-8 w-8" />,
                 },
                 {
                   step: "04",
-                  title: "Optimize & Scale",
-                  description: "Get personalized recommendations, backtest strategies, and scale your best-performing approaches with data-driven confidence.",
-                  icon: <Target className="h-6 w-6" />,
-                  color: "from-red-500 to-orange-600"
+                  title: "Achieve Goals",
+                  description: "Set targets, track your progress, and reach new trading heights.",
+                  icon: <Trophy className="h-8 w-8" />,
                 }
               ].map((item, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className="flex items-start gap-6"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="text-center bg-white dark:bg-gray-900 px-4"
                 >
-                  <div className={`flex-shrink-0 w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center text-white shadow-lg`}>
-                    {item.icon}
+                  <div className="mb-4 inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white text-2xl font-bold border-4 border-white dark:border-gray-900">
+                    {item.step}
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-sm font-bold text-gray-500 dark:text-gray-400">
-                        STEP {item.step}
-                      </span>
-                      <div className="h-px bg-gray-300 dark:bg-gray-600 flex-1"></div>
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {item.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
-
-            {/* Visual Demonstration */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 border border-gray-200 dark:border-gray-700">
-                <div className="space-y-6">
-                  {/* Mock Dashboard */}
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-lg font-bold text-gray-900 dark:text-white">
-                      Trading Dashboard
-                    </h4>
-                    <div className="flex gap-2">
-                      <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                      <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                      <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                    </div>
-                  </div>
-
-                  {/* Stats Cards */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900 dark:to-green-800 p-4 rounded-xl">
-                      <div className="text-2xl font-bold text-green-600 dark:text-green-400">
-                        +₹2,45,000
-                      </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Monthly P&L
-                      </p>
-                    </div>
-                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 p-4 rounded-xl">
-                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        68%
-                      </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Win Rate
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Chart Area */}
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 p-4 rounded-xl">
-                    <div className="flex items-end gap-2 h-20">
-                      {Array.from({ length: 12 }, (_, i) => (
-                        <div
-                          key={i}
-                          className="bg-gradient-to-t from-purple-500 to-pink-500 rounded-sm flex-1"
-                          style={{
-                            height: `${Math.random() * 60 + 20}%`,
-                            animationDelay: `${i * 0.1}s`
-                          }}
-                        ></div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Recent Trades */}
-                  <div className="space-y-3">
-                    <h5 className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                      Recent Trades
-                    </h5>
-                    {[
-                      { symbol: "RELIANCE", pnl: "+₹1,250", status: "profit" },
-                      { symbol: "TCS", pnl: "-₹850", status: "loss" },
-                      { symbol: "HDFC", pnl: "+₹2,100", status: "profit" }
-                    ].map((trade, i) => (
-                      <div key={i} className="flex items-center justify-between">
-                        <span className="text-sm text-gray-600 dark:text-gray-400">
-                          {trade.symbol}
-                        </span>
-                        <span className={`text-sm font-medium ${
-                          trade.status === 'profit' ? 'text-green-600' : 'text-red-600'
-                        }`}>
-                          {trade.pnl}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full animate-pulse delay-1000"></div>
-            </motion.div>
           </div>
-
-          {/* Success Metrics */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-            {[
-              { metric: "10,000+", label: "Active Traders", icon: "👥" },
-              { metric: "₹500Cr+", label: "Trades Tracked", icon: "📊" },
-              { metric: "78%", label: "Avg. Win Rate Improvement", icon: "🎯" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl mb-2">{stat.icon}</div>
-                <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">
-                  {stat.metric}
-                </div>
-                <div className="text-gray-600 dark:text-gray-400">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </motion.div>
         </div>
       </section>
       {/* Pricing Section */}
@@ -1191,45 +895,38 @@ const Home: React.FC = () => {
       {/* FAQ Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
-              Everything you need to know about MyTradeDiary platform
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+              Have questions? We've got answers.
             </p>
           </div>
-
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-900 rounded-lg shadow-sm"
-              >
+              <div key={index} className="bg-white dark:bg-gray-700 rounded-lg shadow-sm">
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                  className="w-full flex justify-between items-center p-5 text-left font-semibold text-gray-900 dark:text-white"
                 >
-                  <span className="font-semibold text-gray-900 dark:text-white">
-                    {faq.question}
-                  </span>
+                  <span>{faq.question}</span>
                   {openFaq === index ? (
-                    <Minus className="h-5 w-5 text-gray-500" />
+                    <Minus className="h-5 w-5" />
                   ) : (
-                    <Plus className="h-5 w-5 text-gray-500" />
+                    <Plus className="h-5 w-5" />
                   )}
                 </button>
-                {openFaq === index && (
-                  <div className="px-6 pb-4">
-                    <p className="text-gray-600 dark:text-gray-400">
-                      {faq.answer}
-                    </p>
+                <motion.div
+                  initial={false}
+                  animate={{ height: openFaq === index ? "auto" : 0 }}
+                  className="overflow-hidden"
+                >
+                  <div className="p-5 pt-0 text-gray-600 dark:text-gray-300">
+                    {faq.answer}
                   </div>
-                )}
-              </motion.div>
+                </motion.div>
+              </div>
             ))}
           </div>
         </div>

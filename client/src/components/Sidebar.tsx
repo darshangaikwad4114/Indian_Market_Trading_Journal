@@ -107,25 +107,25 @@ const Sidebar: React.FC = () => {
           </nav>
 
           {/* User section */}
-          <div className="border-t border-gray-200 dark:border-gray-700 p-4">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="h-8 w-8 rounded-full bg-primary-600 flex items-center justify-center">
+          <div className="border-t border-gray-200 dark:border-gray-700 p-2">
+            <div className="flex items-center space-x-2 mb-2 p-2 rounded-lg">
+              <div className="h-8 w-8 rounded-full bg-primary-600 flex items-center justify-center flex-shrink-0">
                 <span className="text-sm font-medium text-white">
                   {user?.name?.charAt(0) || 'U'}
                 </span>
               </div>
-              <div>
-                <p className="text-sm font-medium text-gray-900 dark:text-white">
+              <div className="truncate">
+                <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
                   {user?.name || 'User'}
                 </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
+                <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
                   {user?.email}
                 </p>
               </div>
             </div>
             <button
               onClick={handleLogout}
-              className="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              className="w-full flex items-center px-3 py-1.5 text-sm text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
             >
               <LogOut className="mr-3 h-4 w-4" />
               Sign out
